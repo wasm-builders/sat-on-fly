@@ -1,5 +1,47 @@
 # sat-on-fly
 
+## Prerequisites
+
+### Fly.io
+
+#### Install the Fly.io CLI
+
+Install the Fly.io CLI: See 👀 https://fly.io/docs/getting-started/installing-flyctl/
+
+```bash
+brew install superfly/tap/flyctl
+```
+
+#### Create an account on Fly.io
+
+You need an account on Fly.io
+
+```bash
+flyctl auth signup
+# you need a credit card to create an account (but there is a free plan)
+```
+
+#### Create a Fly.io token
+
+You need to create a Fly.io token (after the sign up):
+
+- Use https://web.fly.io/user/personal_access_tokens/new
+- Copy the generated value to an environment variable `FLY_ACCESS_TOKEN`
+
+
+### Suborbital
+
+#### Install the Subo CLI
+
+You need to install the Subo CLI: See 👀 https://github.com/suborbital/subo
+
+```bash
+brew tap suborbital/subo
+brew install subo
+```
+
+
+
 ## Create and build the runnable
 
 ```bash
@@ -68,7 +110,7 @@ processes = []
 ## Deployment
 
 ```bash
-# Create the application, only at the first deplyment
+# Create the application, only at the first deployment
 flyctl apps create ${app_name} --json
 
 # Deploy
