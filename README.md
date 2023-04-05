@@ -25,7 +25,7 @@ flyctl auth signup
 
 You need to create a Fly.io token (after the sign up):
 
-- Use https://web.fly.io/user/personal_access_tokens/new
+- Use https://fly.io/user/personal_access_tokens
 - Copy the generated value to an environment variable `FLY_ACCESS_TOKEN`
 
 
